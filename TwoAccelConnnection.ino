@@ -35,7 +35,7 @@ void loop() {
     AcYW = Wire.read() << 8 | Wire.read();
     AcZW = Wire.read() << 8 | Wire.read();
 
-//  Wire.requestFrom(MPU2_addr, 8, true);
+  Wire.requestFrom(MPU2_addr, 8, true);
 
     AcXF = Wire.read() << 8 | Wire.read();
     AcYF = Wire.read() << 8 | Wire.read();
